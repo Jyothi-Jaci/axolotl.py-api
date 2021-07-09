@@ -9,7 +9,7 @@ api=FastAPI()
 async def root():
   d = requests.get('https://raw.githubusercontent.com/AxolotlAPI/data/main/pictures.txt').content
   r = d.decode('utf-8').split('\n')
-  facts = requests.get('https://github.com/AxolotlAPI/data/blob/main/facts.txt').content
+  facts = requests.get('https://raw.githubusercontent.com/AxolotlAPI/data/main/facts.txt').content
   fact_list = facts.decode('utf-8').split('\n')
   return JSONResponse({"url":random.choice(r),
                        "facts":random.choice(fact_list),
