@@ -20,7 +20,4 @@ print(r)
 - [uvicorn](https://www.uvicorn.org/)
 - [gunicorn](https://gunicorn.org/)
 
-# Support
-Support the api's development in crypto:
-- Dogecoin: D9EU2JWH2KENjUYCLxHGCB5WWc2EZhVFSQ
-- Bitcoin: 1A8zRsoZPw4pxk4YLRKiG8GsfRT
+
