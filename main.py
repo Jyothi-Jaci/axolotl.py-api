@@ -2,8 +2,22 @@ from fastapi import FastAPI
 import requests
 import random
 from fastapi.responses import JSONResponse
+from fastapi.middleware.cors import CORSMiddleware
+
+origins = [
+    "*"
+]
+
 
 api=FastAPI()
+
+api.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @api.get("/")
 async def root():
